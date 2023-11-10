@@ -474,7 +474,172 @@ footer .redes-footer .fa-x-twitter:hover{
     margin-bottom: 20px;
 }
 
+/*----------Estilos para la seccion registrarse------*/
+
+.register-body {
+        font-family: 'Source Sans 3', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #f8f9fa;
+    }
+
+.register-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Cambiado a min-height para evitar que el contenido se superponga */
+}
+
+.register-section {
+    max-width: 400px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px; /* Reducido el margen superior */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.container-footer {
+    margin-top: 20px; /* Añadido margen superior para separar el footer del contenido anterior */
+}
+
+    .register-section h1 {
+        font-size: 28px;
+        color: #393939;
+        margin-bottom: 20px;
+    }
+
+    .register-section p {
+        font-size: 18px;
+        color: #555;
+        margin-bottom: 20px;
+    }
+
+        .register-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 8px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .form-group button {
+            background: rgb(215, 95, 51);
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .form-group button:hover {
+            background: rgba(215, 95, 51, 0.57);
+        }
+
+
+/*----------Estilos para la seccion login------*/
+
+  .login-body {
+            font-family: 'Source Sans 3', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f8f9fa;
+        }
+
+        .login-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .login-section {
+            max-width: 400px;
+            padding: 20px;
+            margin: auto;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            border-radius: 8px;
+        }
+
+        .login-section h1 {
+            font-size: 28px;
+            color: #393939;
+            margin-bottom: 20px;
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 8px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .form-group button {
+            background: rgb(215, 95, 51);
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .form-group button:hover {
+            background: rgba(215, 95, 51, 0.505);
+        }
+
+        .container-footer {
+            margin-top: 20px; /* Añadido margen superior para separar el footer del contenido anterior */
+        }
+
+
 /*----------Estilos para la sección busqueda---------*/
+
+.search-container{
+    width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
 
 .search-content{
     width: 1200px;
@@ -606,6 +771,11 @@ button[type="submit"]:hover {
 
 @media screen and (max-width: 1020px){
 
+    .search-container{
+        width: 100%;
+        flex-direction: column;
+    }
+
     .container-content{
         width: 100%;
         flex-direction: column;
@@ -634,6 +804,7 @@ button[type="submit"]:hover {
    .login-content{
         width: 100%;
         flex-direction: column;
+        margin-top: 100px;
     }
 
    .register-content{

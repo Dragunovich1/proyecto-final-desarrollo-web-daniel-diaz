@@ -1,4 +1,5 @@
 ## Segunda Pre-entrega Desarrollo Web - CoderHouse
+
 Alumno: Daniel Díaz
 
 Comision: 46990
@@ -14,9 +15,10 @@ Tutores: Gerardo Gambarte, Santiago Vega, Ara Orzanco
   
   -Se utilizó FlexBox en todas las paginas
   
-  -Se utilizó bootstrap (buscar.html, categorias.html)
+  -Se utilizó bootstrap (buscar.html)
   
   -Se utilizó Grid (registrarse.html, login.html)
+  
   
 ## En el directorio CSS encontrarán el archivo styles.css comentado.
 
