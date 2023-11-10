@@ -14,9 +14,9 @@ Tutores: Gerardo Gambarte, Santiago Vega, Ara Orzanco
   
   -Se utilizó FlexBox en todas las paginas
   
-  -Se utilizó bootstrap (registrarse.html, login.html)
+  -Se utilizó bootstrap (buscar.html, categorias.html)
   
-  -Se utilizó Grid (acerca.html, contacto.html)
+  -Se utilizó Grid (registrarse.html, login.html)
   
 ## En el directorio CSS encontrarán el archivo styles.css comentado.
 
