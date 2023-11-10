@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BlogFierros.com</title>
+    <!-- Iconos de redes sociales JS -->
+    <script src="https://kit.fontawesome.com/2d8036373e.js" crossorigin="anonymous"></script>
+    <!-- Direccionamiento al archivo CSS -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!-- Codificacion de caracteres -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device width, initial-scale=1.0">
+</head>
+<body>
+    <!-- Header y menú-->
+    <header>
+
+        <div class="header-content">
+
+            <div class="logo">
+                <a href="index.html"><h1>Blog<b>Fierros</b></h1></a>
+            </div>
+
+            <div class="menu">
+
+                <nav>
+                    <ul>
+                        <li><a href="buscar.html">Buscar</a></li>
+                        <li><a href="categorias.html">Categorías</a></li>
+                        <li class="menu-selected"><a href="registrarse.html" class="text-menu-selected">Registrarse</a></li>
+                        <li><a href="login.html">Iniciar Sesión</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+
+    </header>
+
+    <!-- Portada -->
+    <div class="container-cover">
+
+        <div class="container-info-cover">
+            <h1>Mas que solo autos!</h1>
+            <p>Unite a nuestra comunidad!!</p>
+        </div>
+
+    </div>
+    <main>
+        <!-- Contenido específico de cada página se insertará aquí, algo similar al {% block content %} {% endblock de django jeje %} -->
+        <div class="container-content">
+            <article>
+                <section class="login-section">
+                    <h1>Iniciar Sesión</h1>
+                    <p>Ingresa tus datos para acceder a tu cuenta:</p>
+            
+                    <!-- Formulario de Inicio de Sesión -->
+                    <form class="login-form">
+                        <input type="text" placeholder="Nombre de Usuario" id="username-input">
+                        <input type="password" placeholder="Contraseña" id="password-input">
+                        <button type="submit">Iniciar Sesión</button>
+                    </form>
+                </section>
+            </article>
+
+            </div>
+        </div>
+    </main>
+    <!-- Seccion de footer, redes, acerca de nosotros y contacto -->
+    <div class="container-footer">
+        <footer>
+            <div class="logo-footer">
+                <img src="assets/images/blogfierros.png" alt="logo-web-footer">
+            </div>
+
+            <div class="redes-footer">
+                <a href="https://www.facebook.com/dragunovich1" target="_blank"><i class="fa-brands fa-facebook icon-redes-footer"></i></a>
+                <a href="https://www.linkedin.com/in/dragunovich1/" target="_blank"><i class="fa-brands fa-linkedin icon-redes-footer"></i></a>
+                <a href="https://www.instagram.com/dragunovich1/" target="_blank"><i class="fa-brands fa-instagram icon-redes-footer"></i></a>
+                <a href="https://github.com/Dragunovich1" target="_blank"><i class="fa-brands fa-github icon-redes-footer"></i></a>
+                <a href="https://twitter.com/dragunovich1" target="_blank"><i class="fa-brands fa-x-twitter icon-redes-footer"></i></a>
+            </div>
+
+            <hr>
+            <h4>&copy; 2023 - Daniel Diaz - Primera Pre-entrega CoderHouse Desarrollo Web</h4>
+            <p><a href="contacto.html">Contacto</a> | <a href="acerca.html">Acerca de Nosotros</a></p>
+
+        </footer>
+    </div>
+
+</body>
+</html>
