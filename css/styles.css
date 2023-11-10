@@ -1,9 +1,9 @@
 /* Se importan las fuentes de google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* Ajustes generales */
+/*----------Ajustes generales---------*/
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,7 +12,7 @@
 
 }
 
-/* Ajustes del Header */
+/*----------Estilos y ajustes para el header---------*/
 
 header{
     position: fixed;
@@ -122,7 +122,7 @@ header{
     opacity: 0.8;
 }
 
-/*Portada*/
+/*----------Estilos para la portada---------*/
 
 .container-info-cover{
     color: rgb(101, 101, 101);
@@ -176,7 +176,7 @@ header{
     color: #989797;
 }
 
-/* Contenedor - contenido del articulo*/
+/*----------Contenedor para contenido del articulo---------*/
 
 .container-content{
     width: 1200px;
@@ -222,9 +222,10 @@ article p{
 article img{
     width: 50%;
     margin-top: 20px;
+    border-radius: 6px;
 }
 
-/* Aside de articulos relacionados*/
+/*----------Aside de articulos relacionados---------*/
 
 .container-aside aside{
     width: 320px;
@@ -262,7 +263,7 @@ article img{
     opacity: 0.9;
 }
 
-/* Footer - Pie de pagina */
+/*----------Estilos para el footer o pie de pagina---------*/
 
 .container-footer{
     width: 100%;
@@ -303,6 +304,8 @@ article img{
     border-radius: 100%;
     color: #a2a2a2;
 }
+
+/*----------Estilos para los botones de redes sociales del footer---------*/
 
 footer .redes-footer .fa-facebook:hover{
     background: #41579a;
@@ -355,7 +358,17 @@ footer .redes-footer .fa-x-twitter:hover{
 }
 
 
-/* Estilos para la sección de Contacto */
+/*----------Estilos para la sección de contacto---------*/
+
+.contact-content{
+    width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+
+}
+
 .contact-section {
     max-width: 800px;
     margin: auto;
@@ -433,7 +446,16 @@ footer .redes-footer .fa-x-twitter:hover{
 }
 
 
-/* Estilos para la sección Acerca de Nosotros */
+/*----------Estilos para la sección acerca de nosotros---------*/
+
+.about-content{
+    width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
 .about-us-section {
     max-width: 800px;
     margin: auto;
@@ -452,7 +474,16 @@ footer .redes-footer .fa-x-twitter:hover{
     margin-bottom: 20px;
 }
 
-/* Estilos para la sección de Búsqueda */
+/*----------Estilos para la sección busqueda---------*/
+
+.search-content{
+    width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
 .search-section {
     max-width: 800px;
     margin: auto;
@@ -471,7 +502,7 @@ footer .redes-footer .fa-x-twitter:hover{
     margin-bottom: 20px;
 }
 
-/* Estilos para el Formulario de Búsqueda */
+/*----------Estilos para el formulario de busqueda---------*/
 .search-form {
     display: flex;
 }
@@ -502,123 +533,18 @@ button[type="submit"]:hover {
     background: rgba(215, 95, 51, 0.511);
 }
 
-/* Estilos para la sección de Iniciar Sesión */
-.login-section {
-    max-width: 800px;
+
+/*----------Estilos para la sección categorías------*/
+
+.cat-content{
+    width: 1200px;
     margin: auto;
-    padding: 20px;
-}
-
-.login-section h1 {
-    font-size: 28px;
-    color: #393939;
-    margin-bottom: 20px;
-}
-
-.login-section p {
-    font-size: 18px;
-    color: #555;
-    margin-bottom: 20px;
-}
-
-/* Estilos para el Formulario de Inicio de Sesión */
-.login-form {
+    margin-top: 100px;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+
 }
 
-#username-input,
-#password-input {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    margin-bottom: 10px;
-}
-
-#username-input::placeholder,
-#password-input::placeholder {
-    color: #999;
-}
-
-button[type="submit"] {
-    background: rgb(215, 95, 51);
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-button[type="submit"]:hover {
-    background: rgba(215, 95, 51, 0.505);
-}
-
-/* Estilos para la sección de Registrarse */
-.register-section {
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-}
-
-.register-section h1 {
-    font-size: 28px;
-    color: #393939;
-    margin-bottom: 20px;
-}
-
-.register-section p {
-    font-size: 18px;
-    color: #555;
-    margin-bottom: 20px;
-}
-
-/* Estilos para el Formulario de Registro */
-.register-form {
-    display: flex;
-    flex-direction: column;
-}
-
-#name-input,
-#apellido-input,
-#username-input,
-#email-input,
-#password-input,
-#confirm-password-input {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    margin-bottom: 10px;
-}
-
-#name-input::placeholder,
-#apellido-input::placeholder,
-#username-input::placeholder,
-#email-input::placeholder,
-#password-input::placeholder,
-#confirm-password-input::placeholder {
-    color: #999;
-}
-
-button[type="submit"] {
-    background: rgb(215, 95, 51);
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-button[type="submit"]:hover {
-    background: rgba(215, 95, 51, 0.57);
-}
-
-/* Estilos para la sección de Categorías */
 .categories-section {
     max-width: 800px;
     margin: auto;
@@ -637,7 +563,8 @@ button[type="submit"]:hover {
     margin-bottom: 20px;
 }
 
-/* Estilos para la Lista de Categorías */
+/*----------Estilos para la lista de categorías------*/
+
 .category-list {
     list-style: none;
     padding: 0;
@@ -653,15 +580,17 @@ button[type="submit"]:hover {
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
+    text-align: center;
     border-radius: 4px;
     font-size: 16px;
+    width: 200px;
 }
 
 .category-list a:hover {
     background: rgba(215, 95, 51, 0.621);
 }
 
-/*----------Responsive - adaptable a dispositivos moviles------*/
+/*----------Adaptabilidad al detectar ancho de pantalla de 1220px------*/
 
 @media screen and (max-width: 1220px){
 
@@ -673,9 +602,41 @@ button[type="submit"]:hover {
     }
 }
 
+/*----------Adaptabilidad al detectar ancho de pantalla de 1020px------*/
+
 @media screen and (max-width: 1020px){
 
     .container-content{
+        width: 100%;
+        flex-direction: column;
+    }
+
+   .about-content{
+        width: 100%;
+        flex-direction: column;
+    }
+
+   .search-content{
+        width: 100%;
+        flex-direction: column;
+    }
+
+   .cat-content{
+        width: 100%;
+        flex-direction: column;
+    }
+
+   .contact-content{
+        width: 100%;
+        flex-direction: column;
+    }
+
+   .login-content{
+        width: 100%;
+        flex-direction: column;
+    }
+
+   .register-content{
         width: 100%;
         flex-direction: column;
     }
@@ -696,8 +657,26 @@ button[type="submit"]:hover {
 
 }
 
+/*----------Adaptabilidad al detectar ancho de pantalla de 800px------*/
 
 @media screen and (max-width: 800px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+/*----------animaciones del menú------*/
+
+    .container-all{
+        transition: all 300ms cubic-bezier(1,0,0,1);
+    }
+
+    .move-container-all{
+        transform: translateX(0px);
+
+    }
+
+/*----------Creación y visualuzación del menú hamburguesa------*/
 
     .menu{
 
@@ -710,6 +689,13 @@ button[type="submit"]:hover {
         background: black;
         opacity: 0.8;
         box-shadow: 10px 0 20px -25px black;
+        transform: translateX(-350px);
+        transition: all 300ms cubic-bezier(1,0,0,1);
+    }
+
+    .show-lateral{
+        width: 300px;
+        transform: translateX(0px);
     }
 
     .menu nav ul{
@@ -746,7 +732,16 @@ button[type="submit"]:hover {
     .container-aside{
         flex-wrap: wrap;
     }
+
 }
 
+/*----------Adaptabilidad al detectar ancho de pantalla de 400px------*/
 
+@media screen and (max-width: 420px){
+
+    .redes-footer{
+        width: 100%;
+        flex-wrap: wrap;
+
+    }
 

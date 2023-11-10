@@ -2,13 +2,14 @@
 <html>
 <head>
     <title>BlogFierros.com</title>
-    <!-- Iconos de redes sociales JS -->
+    <!-- Iconos de redes sociales y menu responsive en JS -->
     <script src="https://kit.fontawesome.com/2d8036373e.js" crossorigin="anonymous"></script>
     <!-- Direccionamiento al archivo CSS -->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <!-- Codificacion de caracteres -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no,  initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="Sitio web dedicado a la tematica de autos clasicos">
 </head>
 <body>
     <!-- Header y menú-->
@@ -20,34 +21,56 @@
                 <a href="index.html"><h1>Blog<b>Fierros</b></h1></a>
             </div>
 
-            <div class="menu">
+            <div class="menu" id="show-menu">
 
                 <nav>
                     <ul>
-                        <li><a href="buscar.html">Buscar</a></li>
-                        <li><a href="categorias.html">Categorías</a></li>
-                        <li class="menu-selected"><a href="registrarse.html" class="text-menu-selected">Registrarse</a></li>
-                        <li><a href="login.html">Iniciar Sesión</a></li>
+                        <li>
+                            <a href="buscar.html"> 
+                                <i class="fa-solid fa-magnifying-glass">
+                                </i>
+                                Buscar
+                            </a>
+                        </li>
+                        <li>
+                            <a href="categorias.html">
+                                <i class="fa-regular fa-bookmark">
+                                </i>
+                                    Categorías
+                            </a>
+                        </li>
+                        <li class="menu-selected">
+                            <a href="registrarse.html" class="text-menu-selected">
+                                <i class="fa-sharp fa-solid fa-pen-to-square">
+                                    
+                                </i>
+                                Registrarse
+                            </a>
+                        </li>
+                        <li>
+                            <a href="login.html">
+                                <i class="fa-regular fa-user">
+                                </i>
+                                    Iniciar Sesión
+                            </a>
+                        </li>
                     </ul>
                 </nav>
 
             </div>
         </div>
 
-    </header>
-
-    <!-- Portada -->
-    <div class="container-cover">
-
-        <div class="container-info-cover">
-            <h1>Mas que solo autos!</h1>
-            <p>Unite a nuestra comunidad!!</p>
+        <div id="icon-menu">
+            <i class="fa-solid fa-bars"></i>
         </div>
 
-    </div>
+    </header>
+
+<div class="container-all" id="move-content">
+
     <main>
-        <!-- Contenido específico de cada página se insertará aquí, algo similar al {% block content %} {% endblock de django jeje %} -->
-        <div class="container-content">
+        <!-- Contenido específico de cada página se insertará aquí, algo similar al {% block content %} {% endblock de django %} -->
+        <div class="contact-content">
             <article>
                 <section class="contact-section">
                     <h1>Contacto</h1>
@@ -56,8 +79,8 @@
                     <div class="contact-methods">
                         <div class="contact-method">
                             <h2>Correo Electrónico</h2>
-                            <p>Correo Electrónico General: <a href="mailto:contacto@blogfierros.com">contacto@blogfierros.com</a></p>
-                            <p>Publicidad y Colaboraciones: <a href="mailto:publicidad@blogfierros.com">publicidad@blogfierros.com</a></p>
+                            <p>Correo Electrónico General: <a href="mailto:contacto@blogfierros.com">contacto@ blogfierros.com</a></p>
+                            <p>Publicidad y Colaboraciones: <a href="mailto:publicidad@blogfierros.com">publicidad@ blogfierros.com</a></p>
                         </div>
             
                         <div class="contact-method">
@@ -105,11 +128,14 @@
             </div>
 
             <hr>
-            <h4>&copy; 2023 - Daniel Diaz - Primera Pre-entrega CoderHouse Desarrollo Web</h4>
+            <h4>&copy; 2023 - Daniel Diaz - Segunda Pre-entrega CoderHouse Desarrollo Web</h4>
             <p><a href="contacto.html">Contacto</a> | <a href="acerca.html">Acerca de Nosotros</a></p>
 
         </footer>
     </div>
+</div>
+    <!-- Direccionamiento al archivo de scrips para ajustes en JS -->
+    <script src="js/script.js"></script>
 
 </body>
 </html>
