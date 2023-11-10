@@ -12,6 +12,8 @@
 
 }
 
+/* Ajustes del Header */
+
 header{
     position: fixed;
     top: 0;
@@ -92,7 +94,11 @@ header{
 }
 
 .menu .text-menu-selected{
-    color: orangered;
+    color: grey;
+}
+
+.menu nav ul li a i{
+    display: none;
 }
 
 #icon-menu{
@@ -105,7 +111,6 @@ header{
     background: #393939;
     border-radius: 100%;
     color: orangered;
-    display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
@@ -656,7 +661,7 @@ button[type="submit"]:hover {
     background: rgba(215, 95, 51, 0.621);
 }
 
-/* Responsive - adaptable a dispositivos moviles*/
+/*----------Responsive - adaptable a dispositivos moviles------*/
 
 @media screen and (max-width: 1220px){
 
@@ -702,8 +707,44 @@ button[type="submit"]:hover {
         top: 80px;
         left: 0;
         overflow: hidden;
-        background: #393939;
+        background: black;
+        opacity: 0.8;
         box-shadow: 10px 0 20px -25px black;
+    }
+
+    .menu nav ul{
+        flex-direction: column;
+
+    }
+
+    .menu nav ul li{
+        max-width: 200px;
+        height: 50px;
+        justify-content: flex-start;
+    }
+
+    .menu-selected:before{
+        width: 0;
+    }
+
+    .menu nav ul li a{
+        margin-top: 40px;
+        color: darkgray;
+    }
+
+    .menu nav ul li a i{
+        width: 20px;
+        display: inline-block;
+        margin-right: 10px;
+        color: orangered;
+    }
+
+    #icon-menu{
+        display: flex;
+    }
+
+    .container-aside{
+        flex-wrap: wrap;
     }
 }
 
