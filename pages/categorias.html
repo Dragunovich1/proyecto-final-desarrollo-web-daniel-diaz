@@ -1,25 +1,24 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Direccionamiento a Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <!-- Direccionamiento al archivo CSS -->
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <title>Página de Búsqueda</title>
+    <title>BlogFierros.com</title>
     <!-- Iconos de redes sociales y menu responsive en JS -->
     <script src="https://kit.fontawesome.com/2d8036373e.js" crossorigin="anonymous"></script>
+    <!-- Direccionamiento al archivo CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <!-- Codificacion de caracteres -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no,  initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="Sitio web dedicado a la tematica de autos clasicos">
 </head>
 <body>
-
     <!-- Header y menú-->
     <header>
 
         <div class="header-content">
 
             <div class="logo">
-                <a href="index.html"><h1>Blog<b>Fierros</b></h1></a>
+                <a href="../index.html"><h1>Blog<b>Fierros</b></h1></a>
             </div>
 
             <div class="menu" id="show-menu">
@@ -66,41 +65,37 @@
         </div>
 
     </header>
-    <div class="container-all" id="move-content">
-        <main class="search-container">
-            <div class="container mt-5">
-                <h1 class="mb-4 text-center">Búsqueda de Artículos</h1>
 
-                <div class="row justify-content-center">
-                    <!-- Formulario de búsqueda -->
-                    <div class="col-md-6">
-                        <div class="card">
-                            <div class="card-body">
-                                <h2 class="card-title"></h2>
-                                <form>
-                                    <div class="form-group">
-                                        <label for="searchInput">Encuentra información sobre tus autos clásicos favoritos. Ingresa una palabra clave y presiona buscar</label>
-                                        <input type="text" class="form-control" id="searchInput" placeholder="Ingrese su búsqueda">
-                                    </div>
-                                        <button type="submit" class="btn btn-warning btn-block">Buscar</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<div class="container-all" id="move-content">
+
+    <main>
+        <!-- Contenido específico de cada página se insertará aquí, algo similar al {% block content %} {% endblock de django jeje %} -->
+        <div class="cat-content">
+            <article>
+                <section class="categories-section">
+                    <h1>Categorías de Artículos</h1>
+                    <p>Explora nuestros artículos por categoría:</p>
+            
+                    <!-- Lista de Categorías -->
+                    <ul class="category-list">
+                        <li><a href="#">Coupe</a></li>
+                        <li><a href="#">Cabrio</a></li>
+                        <li><a href="#">Berlina</a></li>
+                        <li><a href="#">Sedan</a></li>
+                        <li><a href="#">HatchBack</a></li>
+                        <li><a href="#">RatRoad</a></li>
+                    </ul>
+                </section>
+            </article>
+
             </div>
-        </main>
-    </div>
-    <!-- Direccionamiento al archivo de scrips para ajustes en JS -->
-    <script src="js/script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<!-- Seccion de footer, redes, acerca de nosotros y contacto -->
+        </div>
+    </main>
+    <!-- Seccion de footer, redes, acerca de nosotros y contacto -->
     <div class="container-footer">
         <footer>
             <div class="logo-footer">
-                <img src="assets/images/blogfierros.png" alt="logo-web-footer">
+                <img src="../img/blogfierros.png" alt="logo-web-footer">
             </div>
 
             <div class="redes-footer">
@@ -118,8 +113,8 @@
         </footer>
     </div>
 </div>
-
+    <!-- Direccionamiento al archivo de scrips para ajustes en JS -->
+    <script src="../js/script.js"></script>
 
 </body>
 </html>
-
