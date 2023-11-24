@@ -1,23 +1,50 @@
-// Estilos para el footer o pie de página
+/* Variables para colores */
+$color-facebook: #41579a;
+$color-linkedin: #41579a;
+$color-instagram: linear-gradient(to top right, #fcde30, #e9712a, #d2313b, #ae4198, #5443a8);
+$color-github: #000000;
+$color-twitter: #000000;
 
+/* Mixin para los estilos de los iconos de redes sociales */
+@mixin social-icon($color) {
+    &:hover {
+        background: $color;
+        color: #fff;
+    }
+}
+
+/* Mixin para generar estilos de redes sociales */
+@mixin social-icons() {
+    .fa-facebook { @include social-icon($color-facebook); }
+    .fa-linkedin { @include social-icon($color-linkedin); }
+    .fa-instagram { @include social-icon($color-instagram); }
+    .fa-github { @include social-icon($color-github); }
+    .fa-x-twitter { @include social-icon($color-twitter); }
+}
+
+/* Estilos para el footer o pie de página */
 .container-footer {
     width: 100%;
     padding: 40px 0;
     background: #f7f7f7;
     margin-top: 40px;
+
     footer {
         max-width: 1200px;
         margin: auto;
+
         .logo-footer {
             text-align: center;
             img {
                 width: 150px;
             }
         }
+
         .redes-footer {
             display: flex;
             justify-content: center;
             margin-top: 20px;
+
             .icon-redes-footer {
                 font-size: 20px;
                 margin: 20px;
@@ -29,120 +56,34 @@
                 align-items: center;
                 border-radius: 100%;
                 color: #a2a2a2;
-                &:hover {
-                    color: #fff;
-                    &:nth-child(1) { // Facebook
-                        background: #41579a;
-                    }
-                    &:nth-child(2) { // LinkedIn
-                        background: #41579a;
-                    }
-                    &:nth-child(3) { // Instagram
-                        background: linear-gradient(to top right, #FCDE30, #E9712A, #D2313B, #AE4198, #5443A8 );
-                    }
-                    &:nth-child(4) { // GitHub
-                        background: #000000;
-                    }
-                    &:nth-child(5) { // Twitter
-                        background: #000000;
-                    }
-                }
             }
+
+            @include social-icons(); // Utilizando el mixin para estilos de redes sociales
         }
+
         hr {
             margin-top: 20px;
             border: none;
             height: 2px;
             background: rgba(176, 176, 176, 0.401);
         }
+
         h4 {
             text-align: center;
             margin-top: 40px;
             color: #8e8e8e;
             font-weight: 500;
         }
+
         p {
             text-align: center;
             margin-top: 40px;
             color: #8e8e8e;
             font-weight: 500;
+
             a {
                 color: #8e8e8e;
             }
-        }
-    }
-}
-
-// Estilos para la sección de contacto
-
-.contact-content {
-    width: 1200px;
-    margin: auto;
-    margin-top: 100px;
-    display: flex;
-    justify-content: center;
-}
-
-.contact-section {
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-    h1 {
-        font-size: 28px;
-        color: #393939;
-        margin-bottom: 20px;
-    }
-    p {
-        font-size: 18px;
-        color: #555;
-        margin-bottom: 20px;
-    }
-    .contact-methods {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        .contact-method {
-            width: 48%;
-            border-radius: 6px;
-            border: 1px solid #ddd;
-            padding: 20px;
-            margin-bottom: 20px;
-            h2 {
-                font-size: 22px;
-                color: #393939;
-                margin-bottom: 10px;
-            }
-            a {
-                color: #007BFF;
-                &:hover {
-                    text-decoration: underline;
-                }
-            }
-            ul li {
-                margin-left: 20px;
-            }
-        }
-    }
-    .contact-form {
-        border: 1px solid #ddd;
-        border-radius: 6px;
-        padding: 20px;
-        margin-top: 20px;
-        h2 {
-            font-size: 22px;
-            color: #393939;
-            margin-bottom: 10px;
-        }
-    }
-    .contact-location {
-        border: 1px solid #ddd;
-        border-radius: 6px;
-        padding: 20px;
-        margin-top: 20px;
-        h2 {
-            font-size: 22px;
-            color: #393939;
-            margin-bottom: 10px;
         }
     }
 }
