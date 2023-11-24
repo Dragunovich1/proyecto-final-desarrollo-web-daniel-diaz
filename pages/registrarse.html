@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Registrarse</title>
+    <!-- Iconos de redes sociales y menu responsive en JS -->
+    <script src="https://kit.fontawesome.com/2d8036373e.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no,  initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="Sitio web dedicado a la tematica de autos clasicos">
+    <!-- Direccionamiento al archivo CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+
+</head>
+<body class="register-body">
+    <!-- Header y menú -->
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <a href="../index.html"><h1>Blog<b>Fierros</b></h1></a>
+            </div>
+
+            <div class="menu" id="show-menu">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="buscar.html"> 
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                Buscar
+                            </a>
+                        </li>
+                        <li>
+                            <a href="categorias.html">
+                                <i class="fa-regular fa-bookmark"></i>
+                                Categorías
+                            </a>
+                        </li>
+                        <li class="menu-selected">
+                            <a href="registrarse.html" class="text-menu-selected">
+                                <i class="fa-sharp fa-solid fa-pen-to-square"></i>
+                                Registrarse
+                            </a>
+                        </li>
+                        <li>
+                            <a href="login.html">
+                                <i class="fa-regular fa-user"></i>
+                                Iniciar Sesión
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div id="icon-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+<main>
+<!-- Contenido específico de cada página se insertará aquí -->
+<div class="login-content">
+    <div class="container-all" id="move-content">
+    <div class="register-content">
+        <div class="register-section">
+            <h1>Registrarse</h1>
+            <form class="register-form">
+                <div class="form-group">
+                    <label for="name-input">Nombre:</label>
+                    <input type="text" id="name-input" placeholder="Ingrese su nombre">
+                </div>
+                <div class="form-group">
+                    <label for="username-input">Usuario:</label>
+                    <input type="text" id="username-input" placeholder="Ingrese su usuario">
+                </div>
+                <div class="form-group">
+                    <label for="email-input">Correo Electrónico:</label>
+                    <input type="email" id="email-input" placeholder="Ingrese su correo electrónico">
+                </div>
+                <div class="form-group">
+                    <label for="password-input">Contraseña:</label>
+                    <input type="password" id="password-input" placeholder="Ingrese su contraseña">
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password-input">Confirmar Contraseña:</label>
+                    <input type="password" id="confirm-password-input" placeholder="Confirme su contraseña">
+                </div>
+                <div class="form-group">
+                    <button type="submit">Registrarse</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</main>
+        <!-- Sección de footer, redes, acerca de nosotros y contacto -->
+        <div class="container-footer">
+            <footer>
+                <div class="logo-footer">
+                    <img src="../img/blogfierros.png" alt="logo-web-footer">
+                </div>
+
+                <div class="redes-footer">
+                    <a href="https://www.facebook.com/dragunovich1" target="_blank"><i class="fa-brands fa-facebook icon-redes-footer"></i></a>
+                    <a href="https://www.linkedin.com/in/dragunovich1/" target="_blank"><i class="fa-brands fa-linkedin icon-redes-footer"></i></a>
+                    <a href="https://www.instagram.com/dragunovich1/" target="_blank"><i class="fa-brands fa-instagram icon-redes-footer"></i></a>
+                    <a href="https://github.com/Dragunovich1" target="_blank"><i class="fa-brands fa-github icon-redes-footer"></i></a>
+                    <a href="https://twitter.com/dragunovich1" target="_blank"><i class="fa-brands fa-x-twitter icon-redes-footer"></i></a>
+                </div>
+
+                <hr>
+                <h4>&copy; 2023 - Daniel Diaz - Segunda Pre-entrega CoderHouse Desarrollo Web</h4>
+                <p><a href="contacto.html">Contacto</a> | <a href="acerca.html">Acerca de Nosotros</a></p>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Direccionamiento al archivo de scripts para ajustes en JS -->
+    <script src="../js/script.js"></script>
+</body>
+</html>

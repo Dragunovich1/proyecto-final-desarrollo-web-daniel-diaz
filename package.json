@@ -1,0 +1,11 @@
+{
+  "name": "3-pre-entrega-desarrollo-web-daniel-diaz-main",
+  "version": "1.0.0",
+  "description": "https://dragunovich1.github.io/3-pre-entrega-desarrollo-web-daniel-diaz/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

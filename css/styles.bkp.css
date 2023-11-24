@@ -1,0 +1,919 @@
+/* Se importan las fuentes de google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*----------Ajustes generales---------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Source Sans 3', sans-serif;
+
+}
+
+/*----------Estilos y ajustes para el header---------*/
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: #393939;
+    box-shadow: 0 4px 25px -22px black;
+    z-index: 2;
+}
+
+.header-content{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo h1 b{
+    color: orangered;
+}
+
+.logo a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.menu{
+    height: 80px;
+    margin-right: 20px;
+}
+
+.menu nav{
+    height: 100%;
+}
+
+.menu nav ul{
+    height: 100%;
+    display: flex;
+    list-style: none;
+}
+
+.menu nav ul li{
+    height: 100%;
+    margin: 0% 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+
+}
+
+.menu-selected:before{
+    content: '';
+    width: 100%;
+    height: 4px;
+    background: orangered;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.menu nav ul li a{
+    color: grey;
+    font-size: 18;
+    transition: color 300ms;
+}
+
+.menu nav ul li a:hover{
+    color: orangered;
+}
+
+.menu .text-menu-selected{
+    color: grey;
+}
+
+.menu nav ul li a i{
+    display: none;
+}
+
+#icon-menu{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 20px;
+    top: 16px;
+    font-size: 20px;
+    background: #393939;
+    border-radius: 100%;
+    color: orangered;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    display: none;
+}
+
+#icon-menu:hover{
+    opacity: 0.8;
+}
+
+/*----------Estilos para la portada---------*/
+
+.container-info-cover{
+    color: rgb(101, 101, 101);
+}
+
+.container-cover{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    margin-top: 80px;
+    background-image: url(../img/portada.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container-cover:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(74, 73, 73, 0.401);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.container-info-cover{
+    max-width: 800px;
+    height: 500px;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+
+}
+
+.container-info-cover h1{
+    font-size: 40px;
+    font-weight: 500;
+    color: #989797;
+    margin-bottom: 20px;
+}
+
+.container-info-cover p{
+    font-size: 20px;
+    font-weight: 300;
+    color: #989797;
+}
+
+/*----------Contenedor para contenido del articulo---------*/
+
+.container-content{
+    width: 1200px;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+
+}
+
+article{
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 40px;
+    box-shadow: -10px 0 20px -30px black;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+}
+
+article:before{
+    content: '';
+    width: 100%;
+    height: 6px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: orangered;
+}
+
+article h1 {
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+article p{
+    margin-top: 20px;
+    font-size: 18px;
+    color: #393939;
+}
+
+article img{
+    width: 50%;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+
+/*----------Aside de articulos relacionados---------*/
+
+.container-aside aside{
+    width: 320px;
+    border-radius: 6px;
+    box-shadow: 0 0 20px -20px black;
+    overflow: hidden;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+}
+
+.container-aside aside img{
+    width: 100%;
+}
+
+.container-aside aside h2,
+.container-aside aside p{
+    margin-top: 20px;
+    padding: 0px 20px;
+}
+
+.container-aside aside button{
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px 50px;
+    font-size: 16px;
+    background: rgb(215, 95, 51);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.container-aside aside button:hover{
+    opacity: 0.9;
+}
+
+/*----------Estilos para el footer o pie de pagina---------*/
+
+.container-footer{
+    width: 100%;
+    padding: 40px 0;
+    background: #f7f7f7;
+    margin-top: 40px;
+}
+
+.container-footer footer{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.container-footer footer .logo-footer{
+    text-align: center;
+
+}
+
+.container-footer footer .logo-footer img{
+    width: 150px;
+}
+
+.container-footer footer .redes-footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.container-footer footer .redes-footer .icon-redes-footer{
+    font-size: 20px;
+    margin: 20px;
+    background: #efefef;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    color: #a2a2a2;
+}
+
+/*----------Estilos para los botones de redes sociales del footer---------*/
+
+footer .redes-footer .fa-facebook:hover{
+    background: #41579a;
+    color: #fff;
+}
+
+footer .redes-footer .fa-linkedin:hover{
+    background: #41579a;
+    color: #fff;
+}
+
+footer .redes-footer .fa-instagram:hover{
+    background: linear-gradient(to top right, #FCDE30, #E9712A, #D2313B, #AE4198, #5443A8 );
+    color: #fff;
+}
+
+footer .redes-footer .fa-github:hover{
+    background: #000000;
+    color: #fff;
+}
+
+footer .redes-footer .fa-x-twitter:hover{
+    background: #000000;
+    color: #fff;
+}
+
+.container-footer footer hr{
+    margin-top: 20px;
+    border: none;
+    height: 2px;
+    background: rgba(176, 176, 176, 0.401);
+}
+
+.container-footer h4{
+    text-align: center;
+    margin-top: 40px;
+    color: #8e8e8e;
+    font-weight: 500;
+}
+
+.container-footer p{
+    text-align: center;
+    margin-top: 40px;
+    color: #8e8e8e;
+    font-weight: 500;
+}
+
+.container-footer p a{
+    color: #8e8e8e;
+}
+
+
+/*----------Estilos para la sección de contacto---------*/
+
+.contact-content{
+    width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.contact-section {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.contact-section h1 {
+    font-size: 28px;
+    color: #393939;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-method {
+    width: 48%;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-method h2 {
+    font-size: 22px;
+    color: #393939;
+    margin-bottom: 10px;
+}
+
+.contact-method a {
+    color: #007BFF;
+}
+
+.contact-method ul li{
+    margin-left: 20px;
+}
+
+.contact-method a:hover {
+    text-decoration: underline;
+}
+
+.contact-form {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.contact-form h2 {
+    font-size: 22px;
+    color: #393939;
+    margin-bottom: 10px;
+}
+
+.contact-location {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.contact-location h2 {
+    font-size: 22px;
+    color: #393939;
+    margin-bottom: 10px;
+}
+
+
+/*----------Estilos para la sección acerca de nosotros---------*/
+
+.about-content{
+    width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-us-section {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.about-us-section h1 {
+    font-size: 28px;
+    color: #393939;
+    margin-bottom: 20px;
+}
+
+.about-us-section p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/*----------Estilos para la seccion registrarse------*/
+
+.register-body {
+        font-family: 'Source Sans 3', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #f8f9fa;
+    }
+
+.register-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Cambiado a min-height para evitar que el contenido se superponga */
+}
+
+.register-section {
+    max-width: 400px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px; /* Reducido el margen superior */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.container-footer {
+    margin-top: 20px; /* Añadido margen superior para separar el footer del contenido anterior */
+}
+
+    .register-section h1 {
+        font-size: 28px;
+        color: #393939;
+        margin-bottom: 20px;
+    }
+
+    .register-section p {
+        font-size: 18px;
+        color: #555;
+        margin-bottom: 20px;
+    }
+
+        .register-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 8px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .form-group button {
+            background: rgb(215, 95, 51);
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .form-group button:hover {
+            background: rgba(215, 95, 51, 0.57);
+        }
+
+
+/*----------Estilos para la seccion login------*/
+
+  .login-body {
+            font-family: 'Source Sans 3', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f8f9fa;
+        }
+
+        .login-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .login-section {
+            max-width: 400px;
+            padding: 20px;
+            margin: auto;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            border-radius: 8px;
+        }
+
+        .login-section h1 {
+            font-size: 28px;
+            color: #393939;
+            margin-bottom: 20px;
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 8px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .form-group button {
+            background: rgb(215, 95, 51);
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .form-group button:hover {
+            background: rgba(215, 95, 51, 0.505);
+        }
+
+        .container-footer {
+            margin-top: 20px; /* Añadido margen superior para separar el footer del contenido anterior */
+        }
+
+
+/*----------Estilos para la sección busqueda---------*/
+
+.search-container{
+    width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.search-content{
+    width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.search-section {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.search-section h1 {
+    font-size: 28px;
+    color: #393939;
+    margin-bottom: 20px;
+}
+
+.search-section p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/*----------Estilos para el formulario de busqueda---------*/
+.search-form {
+    display: flex;
+}
+
+#search-input {
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#search-input::placeholder {
+    color: #999;
+}
+
+button[type="submit"] {
+    background: rgb(215, 95, 51);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background: rgba(215, 95, 51, 0.511);
+}
+
+
+/*----------Estilos para la sección categorías------*/
+
+.cat-content{
+    width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.categories-section {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.categories-section h1 {
+    font-size: 28px;
+    color: #393939;
+    margin-bottom: 20px;
+}
+
+.categories-section p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/*----------Estilos para la lista de categorías------*/
+
+.category-list {
+    list-style: none;
+    padding: 0;
+}
+
+.category-list li {
+    margin-bottom: 10px;
+}
+
+.category-list a {
+    display: inline-block;
+    background: rgb(215, 95, 51);
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 200px;
+}
+
+.category-list a:hover {
+    background: rgba(215, 95, 51, 0.621);
+}
+
+/*----------Adaptabilidad al detectar ancho de pantalla de 1220px------*/
+
+@media screen and (max-width: 1220px){
+
+    .header-content,
+    .container-footer footer,
+    .container-content{
+        max-width: 1000px;
+        padding: 0 20px;
+    }
+}
+
+/*----------Adaptabilidad al detectar ancho de pantalla de 1020px------*/
+
+@media screen and (max-width: 1020px){
+
+    .search-container{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .container-content{
+        width: 100%;
+        flex-direction: column;
+    }
+
+   .about-content{
+        width: 100%;
+        flex-direction: column;
+    }
+
+   .search-content{
+        width: 100%;
+        flex-direction: column;
+    }
+
+   .cat-content{
+        width: 100%;
+        flex-direction: column;
+    }
+
+   .contact-content{
+        width: 100%;
+        flex-direction: column;
+    }
+
+   .login-content{
+        width: 100%;
+        flex-direction: column;
+        margin-top: 100px;
+    }
+
+   .register-content{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    article{
+        box-shadow: 0;
+    }
+
+    .container-aside{
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-aside aside{
+        max-width: 300px;
+        margin: 10px;
+    }
+
+}
+
+/*----------Adaptabilidad al detectar ancho de pantalla de 800px------*/
+
+@media screen and (max-width: 800px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+/*----------animaciones del menú------*/
+
+    .container-all{
+        transition: all 300ms cubic-bezier(1,0,0,1);
+    }
+
+    .move-container-all{
+        transform: translateX(0px);
+
+    }
+
+/*----------Creación y visualuzación del menú hamburguesa------*/
+
+    .menu{
+
+        width: 0px;
+        height: 100vh;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        overflow: hidden;
+        background: black;
+        opacity: 0.8;
+        box-shadow: 10px 0 20px -25px black;
+        transform: translateX(-350px);
+        transition: all 300ms cubic-bezier(1,0,0,1);
+    }
+
+    .show-lateral{
+        width: 300px;
+        transform: translateX(0px);
+    }
+
+    .menu nav ul{
+        flex-direction: column;
+
+    }
+
+    .menu nav ul li{
+        max-width: 200px;
+        height: 50px;
+        justify-content: flex-start;
+    }
+
+    .menu-selected:before{
+        width: 0;
+    }
+
+    .menu nav ul li a{
+        margin-top: 40px;
+        color: darkgray;
+    }
+
+    .menu nav ul li a i{
+        width: 20px;
+        display: inline-block;
+        margin-right: 10px;
+        color: orangered;
+    }
+
+    #icon-menu{
+        display: flex;
+    }
+
+    .container-aside{
+        flex-wrap: wrap;
+    }
+
+}
+
+/*----------Adaptabilidad al detectar ancho de pantalla de 400px------*/
+
+@media screen and (max-width: 420px){
+
+    .redes-footer{
+        width: 100%;
+        flex-wrap: wrap;
+
+    }
+
+}
