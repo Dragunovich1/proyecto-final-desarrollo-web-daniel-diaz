@@ -1,7 +1,3 @@
-##Link a GitHub Page
-
-https://dragunovich1.github.io/3-pre-entrega-desarrollo-web-daniel-diaz/
-
 ## Tercera Pre-entrega Desarrollo Web - CoderHouse
 
 Alumno: Daniel Díaz
