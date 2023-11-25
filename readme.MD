@@ -18,10 +18,15 @@ Tutores: Gerardo Gambarte, Santiago Vega, Ara Orzanco
   -Todas las paginas son responsive (mediante media querys en archivo css que afectan todas las paginas)
   
   -Se utilizó SASS: indentación, archivos parciales y variables 
+
   -Se utilizaron mixins y for
+
   -Se utilizó SEO
+
   -Se utilizó animación en el menú y transición en los links a las redes sociales en el footer
+
   -Se aplicó el favicon personalizado
+
   
 ## En el directorio CSS encontrarán el archivo styles.css comentado.
 
