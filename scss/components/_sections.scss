@@ -23,6 +23,7 @@
         max-width: 800px;
         margin: auto;
         padding: 20px;
+        
 
         h1 {
             font-size: $font-size-large;
@@ -44,7 +45,8 @@
             .contact-method {
                 width: 48%;
                 border-radius: 6px;
-                border: 1px solid $color-text-light;
+                border: 1px solid $color-background;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
                 padding: 20px;
                 margin-bottom: 20px;
 
@@ -70,8 +72,9 @@
 
         .contact-form,
         .contact-location {
-            border: 1px solid $color-text-light;
+            border: 1px solid $color-background;
             border-radius: 6px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
             padding: 20px;
             margin-top: 20px;
 
@@ -96,6 +99,9 @@
         max-width: 800px;
         margin: auto;
         padding: 20px;
+        border: 1px solid $color-background;
+        border-radius: 6px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 
         h1 {
             font-size: $font-size-large;
@@ -269,6 +275,8 @@
         max-width: 800px;
         margin: auto;
         padding: 20px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        border-radius: 6px;
 
         h1 {
             font-size: $font-size-large;
@@ -326,17 +334,23 @@
         max-width: 800px;
         margin: auto;
         padding: 20px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        border-radius: 6px;
 
         h1 {
             font-size: $font-size-large;
             color: $color-text;
             margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
         }
 
         p {
             font-size: $font-size-medium;
             color: $color-text-light;
             margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
         }
 
         .category-list {
@@ -345,13 +359,15 @@
 
             li {
                 margin-bottom: 10px;
+                display: flex;
+                justify-content: center;
 
                 a {
                     
                     @extend .btn;
 
                     display: inline-block;
-                    width: 300px;
+                    width: 200px;
                     text-align: center;
 
 
