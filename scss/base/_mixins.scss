@@ -1,6 +1,7 @@
-@import './variables'; // Importar el archivo de variables
+// Importar el archivo de variables
+@import './variables';
 
-/* Mixin para los estilos de los iconos de redes sociales */
+// Mixin para los estilos de los iconos de redes sociales
 @mixin social-icon($color) {
     &:hover {
         background: $color;
@@ -8,7 +9,7 @@
     }
 }
 
-/* Mixin para generar estilos de redes sociales */
+// Mixin para generar estilos de redes sociales
 @mixin social-icons() {
     .fa-facebook { @include social-icon($color-facebook); }
     .fa-linkedin { @include social-icon($color-linkedin); }

@@ -1,7 +1,10 @@
-/* Se importan las fuentes de google fonts */
+//Se importan fuentes de google
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/*----------Ajustes generales---------*/
+// Importar el archivo de variables
+@import '../base/maps';
+
+//Ajustes generales
 
 * {
     margin: 0;
@@ -14,7 +17,7 @@
 
 // Estilos para la portada
 .container-info-cover {
-    color: rgb(101, 101, 101);
+    color: map-get($map: $colors, $key: portada_bkg);
 }
 
 .container-cover {
@@ -31,7 +34,7 @@
         content: '';
         width: 100%;
         height: 100%;
-        background: rgba(74, 73, 73, 0.401);
+        background: map-get($map: $colors, $key: cont_cov_bg);
         position: absolute;
         top: 0;
         left: 0;
@@ -53,14 +56,14 @@
     h1 {
         font-size: 40px;
         font-weight: 500;
-        color: #989797;
+        color: map-get($map: $colors, $key: portada_text);
         margin-bottom: 20px;
     }
 
     p {
         font-size: 20px;
         font-weight: 300;
-        color: #989797;
+        color: map-get($map: $colors, $key: portada_text);
     }
 }
 
@@ -88,7 +91,7 @@
             position: absolute;
             top: 0;
             left: 0;
-            background: $color-primary;
+            background: map-get($map: $colors, $key: primary);
         }
 
         h1 {
@@ -100,7 +103,7 @@
         p {
             margin-top: 20px;
             font-size: 18px;
-            color: #393939;
+            color: map-get($map: $colors, $key: text_base);
         }
 
         img {
@@ -136,7 +139,7 @@
         margin-left: 20px;
         padding: 10px 50px;
         font-size: 16px;
-        background: $color-primary;
+        background: map-get($map: $colors, $key: primary);
         border: none;
         color: #fff;
         cursor: pointer;

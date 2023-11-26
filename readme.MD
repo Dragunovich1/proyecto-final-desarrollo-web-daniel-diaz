@@ -27,6 +27,8 @@ Tutores: Gerardo Gambarte, Santiago Vega, Ara Orzanco
 	  
 	  -Se utiliaron extends (_sections.scss)
 
+    -Se utilizaron maps (_maps.scss aplicado en _home.scss)
+
   -En el directorio CSS encontrarán el archivo styles.css resultante de la compilación
 
 
