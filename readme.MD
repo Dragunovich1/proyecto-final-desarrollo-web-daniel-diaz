@@ -49,17 +49,3 @@ Tutores: Gerardo Gambarte, Santiago Vega, Ara Orzanco
   -El archivo .gitignore ignora los directorios 00. Rollback, 01. Rotos y el archivos styles.bkp.css
 
   -El archivo package.json contiene aclaraciones de version y autoría
-
-## En el directorio SCSS encontrarán los archivos parciales.
-
-  -En el directorio base se encuentran los archivos: _navigation.scss, _responsive.scss, _variables.scss, mixins.scss
-
-  -En el directorio components se encuentran los archivos: _header.scss, _footer.scss, _home.scss, _sections.scss
-
-  -En el directorio SCSS se encuentra el archivo styles.scss
-
-## Aclaraciones adicionales
-
-  -El archivo .gitignore ignora los directorios 00. Rollback, 01. Rotos y el archivos styles.bkp.css
-
-  -El archivo package.json contiene aclaraciones de version y autoría
