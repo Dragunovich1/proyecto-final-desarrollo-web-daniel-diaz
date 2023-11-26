@@ -1,0 +1,23 @@
+// _variables.scss - archivo donde se guardan las variables a utilizar:
+
+// Variables para colores
+$color-primary: #e9502aee;
+$color-secondary: #e9712a;
+$color-accent: #5443a8;
+$color-text: #393939;
+$color-text-light: #555;
+$color-background: #f8f9fa;
+$color-button-hover: rgba(215, 95, 51, 0.5);
+$form-items-color: #dddddd;
+$placeholder-text-color: #999;
+$header-background-color: #393939;
+$header-li-color: grey;
+
+// Variables para tamaños
+$font-size-large: 28px;
+$font-size-medium: 18px;
+$font-size-small: 16px;
+
+//Variables para animaciones y transiciones:
+$transition-duration: 0.3s; // Duración de la transición
+$transition-color: color 300ms;

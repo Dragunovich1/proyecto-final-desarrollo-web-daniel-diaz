@@ -27,7 +27,7 @@ header {
 }
 
 .logo h1 b {
-  color: orangered;
+  color: rgba(233, 80, 42, 0.9333333333);
 }
 
 .logo a {
@@ -63,7 +63,7 @@ header {
   content: "";
   width: 100%;
   height: 4px;
-  background: orangered;
+  background: rgba(233, 80, 42, 0.9333333333);
   position: absolute;
   top: 0;
   left: 0;
@@ -76,7 +76,7 @@ header {
 }
 
 .menu nav ul li a:hover {
-  color: orangered;
+  color: rgba(233, 80, 42, 0.9333333333);
 }
 
 .menu .text-menu-selected {
@@ -96,7 +96,7 @@ header {
   font-size: 20px;
   background: #393939;
   border-radius: 100%;
-  color: orangered;
+  color: rgba(233, 80, 42, 0.9333333333);
   justify-content: center;
   align-items: center;
   cursor: pointer;
@@ -189,7 +189,7 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  background: orangered;
+  background: rgba(233, 80, 42, 0.9333333333);
 }
 .container-content article h1 {
   margin-top: 20px;
@@ -229,7 +229,7 @@ header {
   margin-left: 20px;
   padding: 10px 50px;
   font-size: 16px;
-  background: rgb(215, 95, 51);
+  background: rgba(233, 80, 42, 0.9333333333);
   border: none;
   color: #fff;
   cursor: pointer;
@@ -269,17 +269,17 @@ header {
 .contact-content .contact-section .contact-methods .contact-method {
   width: 48%;
   border-radius: 6px;
-  border: 1px solid #ddd;
+  border: 1px solid #555;
   padding: 20px;
   margin-bottom: 20px;
 }
 .contact-content .contact-section .contact-methods .contact-method h2 {
-  font-size: 22px;
+  font-size: 28px;
   color: #393939;
   margin-bottom: 10px;
 }
 .contact-content .contact-section .contact-methods .contact-method a {
-  color: #007BFF;
+  color: rgba(233, 80, 42, 0.9333333333);
 }
 .contact-content .contact-section .contact-methods .contact-method a:hover {
   text-decoration: underline;
@@ -289,14 +289,14 @@ header {
 }
 .contact-content .contact-section .contact-form,
 .contact-content .contact-section .contact-location {
-  border: 1px solid #ddd;
+  border: 1px solid #555;
   border-radius: 6px;
   padding: 20px;
   margin-top: 20px;
 }
 .contact-content .contact-section .contact-form h2,
 .contact-content .contact-section .contact-location h2 {
-  font-size: 22px;
+  font-size: 28px;
   color: #393939;
   margin-bottom: 10px;
 }
@@ -373,11 +373,11 @@ header {
   width: 100%;
   padding: 10px;
   font-size: 16px;
-  border: 1px solid #ddd;
+  border: 1px solid #dddddd;
   border-radius: 4px;
 }
 .register-body .register-content .register-section .register-form .form-group button {
-  background: rgb(215, 95, 51);
+  background: rgba(233, 80, 42, 0.9333333333);
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -386,7 +386,7 @@ header {
   cursor: pointer;
 }
 .register-body .register-content .register-section .register-form .form-group button:hover {
-  background: rgba(215, 95, 51, 0.57);
+  background: rgba(215, 95, 51, 0.5);
 }
 
 .login-body {
@@ -432,11 +432,11 @@ header {
   width: 100%;
   padding: 10px;
   font-size: 16px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+  border: 1px solid #dddddd;
+  border-radius: 4p;
 }
 .login-body .login-content .login-section .login-form .form-group button {
-  background: rgb(215, 95, 51);
+  background: rgba(233, 80, 42, 0.9333333333);
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -445,7 +445,7 @@ header {
   cursor: pointer;
 }
 .login-body .login-content .login-section .login-form .form-group button:hover {
-  background: rgba(215, 95, 51, 0.505);
+  background: rgba(215, 95, 51, 0.5);
 }
 
 .search-container,
@@ -483,7 +483,7 @@ header {
   width: 70%;
   padding: 10px;
   font-size: 16px;
-  border: 1px solid #ddd;
+  border: 1px solid #dddddd;
   border-radius: 4px;
 }
 .search-container .search-section .search-form #search-input::placeholder,
@@ -492,7 +492,7 @@ header {
 }
 .search-container .search-section .search-form button[type=submit],
 .search-content .search-section .search-form button[type=submit] {
-  background: rgb(215, 95, 51);
+  background: rgba(233, 80, 42, 0.9333333333);
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -502,7 +502,7 @@ header {
 }
 .search-container .search-section .search-form button[type=submit]:hover,
 .search-content .search-section .search-form button[type=submit]:hover {
-  background: rgba(215, 95, 51, 0.511);
+  background: rgba(215, 95, 51, 0.5);
 }
 
 .cat-content {
@@ -536,7 +536,7 @@ header {
 }
 .cat-content .categories-section .category-list li a {
   display: inline-block;
-  background: rgb(215, 95, 51);
+  background: rgba(233, 80, 42, 0.9333333333);
   color: #fff;
   padding: 10px 20px;
   text-decoration: none;
@@ -546,7 +546,7 @@ header {
   width: 200px;
 }
 .cat-content .categories-section .category-list li a:hover {
-  background: rgba(215, 95, 51, 0.621);
+  background: rgba(215, 95, 51, 0.5);
 }
 
 /* Variables para colores */

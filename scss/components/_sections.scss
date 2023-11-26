@@ -1,3 +1,5 @@
+@import '../base/variables'; // Importar el archivo de variables
+
 // Estilos para la sección de contacto
 .contact-content {
     width: 1200px;
@@ -12,14 +14,14 @@
         padding: 20px;
 
         h1 {
-            font-size: 28px;
-            color: #393939;
+            font-size: $font-size-large;
+            color: $color-text;
             margin-bottom: 20px;
         }
 
         p {
-            font-size: 18px;
-            color: #555;
+            font-size: $font-size-medium;
+            color: $color-text-light;
             margin-bottom: 20px;
         }
 
@@ -31,18 +33,18 @@
             .contact-method {
                 width: 48%;
                 border-radius: 6px;
-                border: 1px solid #ddd;
+                border: 1px solid $color-text-light;
                 padding: 20px;
                 margin-bottom: 20px;
 
                 h2 {
-                    font-size: 22px;
-                    color: #393939;
+                    font-size: $font-size-large;
+                    color: $color-text;
                     margin-bottom: 10px;
                 }
 
                 a {
-                    color: #007BFF;
+                    color: $color-primary;
 
                     &:hover {
                         text-decoration: underline;
@@ -57,14 +59,14 @@
 
         .contact-form,
         .contact-location {
-            border: 1px solid #ddd;
+            border: 1px solid $color-text-light;
             border-radius: 6px;
             padding: 20px;
             margin-top: 20px;
 
             h2 {
-                font-size: 22px;
-                color: #393939;
+                font-size: $font-size-large;
+                color: $color-text;
                 margin-bottom: 10px;
             }
         }
@@ -85,14 +87,14 @@
         padding: 20px;
 
         h1 {
-            font-size: 28px;
-            color: #393939;
+            font-size: $font-size-large;
+            color: $color-text;
             margin-bottom: 20px;
         }
 
         p {
-            font-size: 18px;
-            color: #555;
+            font-size: $font-size-medium;
+            color: $color-text-light;
             margin-bottom: 20px;
         }
     }
@@ -104,7 +106,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f8f9fa;
+    background-color: $color-background;
 
     .register-content {
         display: grid;
@@ -123,14 +125,14 @@
             border-radius: 8px;
 
             h1 {
-                font-size: 28px;
-                color: #393939;
+                font-size: $font-size-large;
+                color: $color-text;
                 margin-bottom: 20px;
             }
 
             p {
-                font-size: 18px;
-                color: #555;
+                font-size: $font-size-medium;
+                color: $color-text-light;
                 margin-bottom: 20px;
             }
 
@@ -142,30 +144,30 @@
                     margin-bottom: 20px;
 
                     label {
-                        font-size: 16px;
-                        color: #555;
+                        font-size: $font-size-small;
+                        color: $color-text-light;
                         margin-bottom: 8px;
                     }
 
                     input {
                         width: 100%;
                         padding: 10px;
-                        font-size: 16px;
-                        border: 1px solid #ddd;
+                        font-size: $font-size-small;
+                        border: 1px solid $form-items-color;
                         border-radius: 4px;
                     }
 
                     button {
-                        background: rgb(215, 95, 51);
+                        background: $color-primary;
                         color: #fff;
                         border: none;
                         border-radius: 4px;
                         padding: 10px 20px;
-                        font-size: 16px;
+                        font-size: $font-size-small;
                         cursor: pointer;
 
                         &:hover {
-                            background: rgba(215, 95, 51, 0.57);
+                            background: $color-button-hover;
                         }
                     }
                 }
@@ -180,7 +182,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f8f9fa;
+    background-color: $color-background;
 
     .login-content {
         display: grid;
@@ -198,8 +200,8 @@
             border-radius: 8px;
 
             h1 {
-                font-size: 28px;
-                color: #393939;
+                font-size: $font-size-large;
+                color: $color-text;
                 margin-bottom: 20px;
             }
 
@@ -211,30 +213,30 @@
                     margin-bottom: 20px;
 
                     label {
-                        font-size: 16px;
-                        color: #555;
+                        font-size: $font-size-small;
+                        color: $color-text-light;
                         margin-bottom: 8px;
                     }
 
                     input {
                         width: 100%;
                         padding: 10px;
-                        font-size: 16px;
-                        border: 1px solid #ddd;
-                        border-radius: 4px;
+                        font-size: $font-size-small;
+                        border: 1px solid $form-items-color;
+                        border-radius: 4p
                     }
 
                     button {
-                        background: rgb(215, 95, 51);
+                        background: $color-primary;
                         color: #fff;
                         border: none;
                         border-radius: 4px;
                         padding: 10px 20px;
-                        font-size: 16px;
+                        font-size: $font-size-small;
                         cursor: pointer;
 
                         &:hover {
-                            background: rgba(215, 95, 51, 0.505);
+                            background: $color-button-hover;
                         }
                     }
                 }
@@ -258,14 +260,14 @@
         padding: 20px;
 
         h1 {
-            font-size: 28px;
-            color: #393939;
+            font-size: $font-size-large;
+            color: $color-text;
             margin-bottom: 20px;
         }
 
         p {
-            font-size: 18px;
-            color: #555;
+            font-size: $font-size-medium;
+            color: $color-text-light;
             margin-bottom: 20px;
         }
 
@@ -275,26 +277,26 @@
             #search-input {
                 width: 70%;
                 padding: 10px;
-                font-size: 16px;
-                border: 1px solid #ddd;
+                font-size: $font-size-small;
+                border: 1px solid $form-items-color;
                 border-radius: 4px;
 
                 &::placeholder {
-                    color: #999;
+                    color: $placeholder-text-color;
                 }
             }
 
             button[type="submit"] {
-                background: rgb(215, 95, 51);
+                background: $color-primary;
                 color: #fff;
                 border: none;
                 border-radius: 4px;
                 padding: 10px 20px;
-                font-size: 16px;
+                font-size: $font-size-small;
                 cursor: pointer;
 
                 &:hover {
-                    background: rgba(215, 95, 51, 0.511);
+                    background: $color-button-hover;
                 }
             }
         }
@@ -315,14 +317,14 @@
         padding: 20px;
 
         h1 {
-            font-size: 28px;
-            color: #393939;
+            font-size: $font-size-large;
+            color: $color-text;
             margin-bottom: 20px;
         }
 
         p {
-            font-size: 18px;
-            color: #555;
+            font-size: $font-size-medium;
+            color: $color-text-light;
             margin-bottom: 20px;
         }
 
@@ -335,17 +337,17 @@
 
                 a {
                     display: inline-block;
-                    background: rgb(215, 95, 51);
+                    background: $color-primary;
                     color: #fff;
                     padding: 10px 20px;
                     text-decoration: none;
                     text-align: center;
                     border-radius: 4px;
-                    font-size: 16px;
+                    font-size: $font-size-small;
                     width: 200px;
 
                     &:hover {
-                        background: rgba(215, 95, 51, 0.621);
+                        background: $color-button-hover;
                     }
                 }
             }

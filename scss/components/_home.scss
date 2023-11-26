@@ -88,7 +88,7 @@
             position: absolute;
             top: 0;
             left: 0;
-            background: orangered;
+            background: $color-primary;
         }
 
         h1 {
@@ -136,7 +136,7 @@
         margin-left: 20px;
         padding: 10px 50px;
         font-size: 16px;
-        background: rgb(215, 95, 51);
+        background: $color-primary;
         border: none;
         color: #fff;
         cursor: pointer;
