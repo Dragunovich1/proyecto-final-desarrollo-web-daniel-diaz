@@ -33,11 +33,8 @@ Tutores: Gerardo Gambarte, Santiago Vega, Ara Orzanco
 
   -Se aplicó el favicon personalizado
 
-  
-## En el directorio CSS encontrarán el archivo styles.css resultante de la compilación
-## En el directorio CSS encontrarán el archivo styles.css resultante de la compilación
+  -En el directorio CSS encontrarán el archivo styles.css resultante de la compilación
 
-  -Se utilizó un archivo .css unico comentando cada sección
 
 ## En el directorio SCSS encontrarán los archivos parciales.
 
