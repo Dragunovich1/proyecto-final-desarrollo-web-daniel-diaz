@@ -34,7 +34,7 @@ Tutores: Gerardo Gambarte, Santiago Vega, Ara Orzanco
 
 ## En el directorio SCSS encontrarán los archivos parciales.
 
-  -En el directorio SCSS/base se encuentran los archivos: _responsive.scss, _variables.scss, _mixins.scss
+  -En el directorio SCSS/base se encuentran los archivos: _responsive.scss, _variables.scss, _mixins.scss, _maps.scss
 
   -En el directorio SCSS/components se encuentran los archivos: _header.scss, _footer.scss, _home.scss, _sections.scss
 
