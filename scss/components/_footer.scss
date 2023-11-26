@@ -1,26 +1,4 @@
-/* Variables para colores */
-$color-facebook: #41579a;
-$color-linkedin: #41579a;
-$color-instagram: linear-gradient(to top right, #fcde30, #e9712a, #d2313b, #ae4198, #5443a8);
-$color-github: #000000;
-$color-twitter: #000000;
-
-/* Mixin para los estilos de los iconos de redes sociales */
-@mixin social-icon($color) {
-    &:hover {
-        background: $color;
-        color: #fff;
-    }
-}
-
-/* Mixin para generar estilos de redes sociales */
-@mixin social-icons() {
-    .fa-facebook { @include social-icon($color-facebook); }
-    .fa-linkedin { @include social-icon($color-linkedin); }
-    .fa-instagram { @include social-icon($color-instagram); }
-    .fa-github { @include social-icon($color-github); }
-    .fa-x-twitter { @include social-icon($color-twitter); }
-}
+@import '../base/mixins'; //Importamos los mixins para los estilos de footer
 
 /* Estilos para el footer o pie de página */
 .container-footer {
