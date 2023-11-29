@@ -13,7 +13,7 @@ Tutores: Gerardo Gambarte, Santiago Vega, Ara Orzanco
 
   -Todas las paginas son responsive (_responsive.scss)
   
-  -Se utilizó SEO
+  -Se utilizó SEO : Imagenes con alt, title, loading lazy, y formato webp, todas las paginas con description, keywords, title, etc.
   
   -Se utilizó SASS: anidaciones, archivos parciales (dentro de la carpeta scss) y variables (_variables.scss) 
 
