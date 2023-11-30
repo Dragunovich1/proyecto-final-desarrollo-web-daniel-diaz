@@ -445,7 +445,7 @@ header {
   padding: 10px;
   font-size: 16px;
   border: 1px solid #dddddd;
-  border-radius: 4p;
+  border-radius: 4px;
 }
 .login-body .login-content .login-section .login-form .form-group button {
   background: rgba(233, 80, 42, 0.9333333333);
