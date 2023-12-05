@@ -1,4 +1,4 @@
-## Proyecto Final Desarrollo Web - CoderHouse
+## Proyecto Final - Desarrollo Web - CoderHouse
 
 Alumno: Daniel Díaz
 
